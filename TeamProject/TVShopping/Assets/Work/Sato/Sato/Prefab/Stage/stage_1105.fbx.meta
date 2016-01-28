@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: 1927cff6385bb442e8d42e028c95521e
+timeCreated: 1446890134
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: stage:book
+    100002: stage:book 1
+    100004: stage:book1
+    100006: stage:book1 1
+    100008: stage:book2
+    100010: stage:book2 1
+    100012: stage:book3
+    100014: stage:book3 1
+    100016: stage:book4
+    100018: stage:book4 1
+    100020: stage:book5
+    100022: stage:book5 1
+    100024: stage:book6
+    100026: stage:book6 1
+    100028: stage:books1
+    100030: stage:books2
+    100032: stage:bookshelf
+    100034: stage:bottom
+    100036: stage:cage
+    100038: stage:cagedesk
+    100040: stage:desk
+    100042: stage:egg
+    100044: stage:floor
+    100046: stage:haikei
+    100048: stage:nest
+    100050: stage:pCylinder2
+    100052: stage:pointLight1
+    100054: stage:pointLight2
+    100056: stage:polySurface10
+    100058: stage:polySurface11
+    100060: stage:pPlane2
+    100062: stage:pPlane3
+    100064: stage:pPlane4
+    100066: stage:pPlane5
+    100068: stage:pPlane6
+    100070: stage:pPlane7
+    100072: stage:stage
+    100074: stage:tenjou
+    100076: stage:tree
+    100078: stage:wall
+    100080: stage:window
+    100082: //RootNode
+    400000: stage:book
+    400002: stage:book 1
+    400004: stage:book1
+    400006: stage:book1 1
+    400008: stage:book2
+    400010: stage:book2 1
+    400012: stage:book3
+    400014: stage:book3 1
+    400016: stage:book4
+    400018: stage:book4 1
+    400020: stage:book5
+    400022: stage:book5 1
+    400024: stage:book6
+    400026: stage:book6 1
+    400028: stage:books1
+    400030: stage:books2
+    400032: stage:bookshelf
+    400034: stage:bottom
+    400036: stage:cage
+    400038: stage:cagedesk
+    400040: stage:desk
+    400042: stage:egg
+    400044: stage:floor
+    400046: stage:haikei
+    400048: stage:nest
+    400050: stage:pCylinder2
+    400052: stage:pointLight1
+    400054: stage:pointLight2
+    400056: stage:polySurface10
+    400058: stage:polySurface11
+    400060: stage:pPlane2
+    400062: stage:pPlane3
+    400064: stage:pPlane4
+    400066: stage:pPlane5
+    400068: stage:pPlane6
+    400070: stage:pPlane7
+    400072: stage:stage
+    400074: stage:tenjou
+    400076: stage:tree
+    400078: stage:wall
+    400080: stage:window
+    400082: //RootNode
+    2300000: stage:book
+    2300002: stage:book 1
+    2300004: stage:book1
+    2300006: stage:book1 1
+    2300008: stage:book2
+    2300010: stage:book2 1
+    2300012: stage:book3
+    2300014: stage:book3 1
+    2300016: stage:book4
+    2300018: stage:book4 1
+    2300020: stage:book5
+    2300022: stage:book5 1
+    2300024: stage:book6
+    2300026: stage:book6 1
+    2300028: stage:bookshelf
+    2300030: stage:cage
+    2300032: stage:cagedesk
+    2300034: stage:desk
+    2300036: stage:egg
+    2300038: stage:floor
+    2300040: stage:haikei
+    2300042: stage:nest
+    2300044: stage:pCylinder2
+    2300046: stage:polySurface10
+    2300048: stage:polySurface11
+    2300050: stage:pPlane2
+    2300052: stage:pPlane3
+    2300054: stage:pPlane4
+    2300056: stage:pPlane5
+    2300058: stage:pPlane6
+    2300060: stage:pPlane7
+    2300062: stage:stage
+    2300064: stage:tenjou
+    2300066: stage:wall
+    2300068: stage:window
+    3300000: stage:book
+    3300002: stage:book 1
+    3300004: stage:book1
+    3300006: stage:book1 1
+    3300008: stage:book2
+    3300010: stage:book2 1
+    3300012: stage:book3
+    3300014: stage:book3 1
+    3300016: stage:book4
+    3300018: stage:book4 1
+    3300020: stage:book5
+    3300022: stage:book5 1
+    3300024: stage:book6
+    3300026: stage:book6 1
+    3300028: stage:bookshelf
+    3300030: stage:cage
+    3300032: stage:cagedesk
+    3300034: stage:desk
+    3300036: stage:egg
+    3300038: stage:floor
+    3300040: stage:haikei
+    3300042: stage:nest
+    3300044: stage:pCylinder2
+    3300046: stage:polySurface10
+    3300048: stage:polySurface11
+    3300050: stage:pPlane2
+    3300052: stage:pPlane3
+    3300054: stage:pPlane4
+    3300056: stage:pPlane5
+    3300058: stage:pPlane6
+    3300060: stage:pPlane7
+    3300062: stage:stage
+    3300064: stage:tenjou
+    3300066: stage:wall
+    3300068: stage:window
+    4300000: stage:desk
+    4300002: stage:haikei
+    4300004: stage:window
+    4300006: stage:wall
+    4300008: stage:tenjou
+    4300010: stage:floor
+    4300012: stage:stage
+    4300014: stage:cagedesk
+    4300016: stage:cage
+    4300018: stage:nest
+    4300020: stage:egg
+    4300022: stage:bookshelf
+    4300024: stage:book
+    4300026: stage:book1
+    4300028: stage:book2
+    4300030: stage:book3
+    4300032: stage:book4
+    4300034: stage:book5
+    4300036: stage:book6
+    4300038: stage:book
+    4300040: stage:book1
+    4300042: stage:book2
+    4300044: stage:book3
+    4300046: stage:book4
+    4300048: stage:book5
+    4300050: stage:book6
+    4300052: stage:polySurface10
+    4300054: stage:polySurface11
+    4300056: stage:pCylinder2
+    4300058: stage:pPlane2
+    4300060: stage:pPlane3
+    4300062: stage:pPlane4
+    4300064: stage:pPlane5
+    4300066: stage:pPlane6
+    4300068: stage:pPlane7
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

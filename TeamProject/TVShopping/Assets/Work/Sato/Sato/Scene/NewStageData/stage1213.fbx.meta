@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: 203561fd65fa9488e8e29afd6f9b7f75
+timeCreated: 1450021125
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: baloon1
+    100002: baloon2
+    100004: baloon3
+    100006: baloon4
+    100008: books1
+    100010: books2
+    100012: bookshelf
+    100014: cage
+    100016: cagedesk
+    100018: camera1
+    100020: desk
+    100022: desk_baloom
+    100024: egg
+    100026: floor
+    100028: haikei
+    100030: hat
+    100032: hat1
+    100034: hat2
+    100036: light1
+    100038: light2
+    100040: nest
+    100042: nest1
+    100044: nest2
+    100046: nest3
+    100048: nest4
+    100050: nests
+    100052: pCube1
+    100054: pCube2
+    100056: pCube3
+    100058: pCube4
+    100060: pCube5
+    100062: pCube6
+    100064: pCube7
+    100066: pCylinder2
+    100068: pCylinder3
+    100070: pCylinder3 1
+    100072: pointlight1
+    100074: pointlight2
+    100076: polySurface10
+    100078: polySurface11
+    100080: pPlane2
+    100082: pPlane3
+    100084: pPlane4
+    100086: pPlane4 1
+    100088: pPlane5
+    100090: pPlane5 1
+    100092: pPlane6
+    100094: pPlane6 1
+    100096: pPlane7
+    100098: pPlane7 1
+    100100: pSphere1
+    100102: pSphere1 1
+    100104: reaf
+    100106: sofa
+    100108: sofa1
+    100110: stage
+    100112: stage1125:reaf
+    100114: stage1125:stage:book
+    100116: stage1125:stage:book 1
+    100118: stage1125:stage:book1
+    100120: stage1125:stage:book1 1
+    100122: stage1125:stage:book2
+    100124: stage1125:stage:book2 1
+    100126: stage1125:stage:book3
+    100128: stage1125:stage:book3 1
+    100130: stage1125:stage:book4
+    100132: stage1125:stage:book4 1
+    100134: stage1125:stage:book5
+    100136: stage1125:stage:book5 1
+    100138: stage1125:stage:book6
+    100140: stage1125:stage:book6 1
+    100142: stage1125:stage:group3
+    100144: stage1125:stage:group4
+    100146: stage1125:stage:pCube1
+    100148: stage1125:stage:pCube2
+    100150: stage1125:stage:pCube3
+    100152: stage1125:stage:pCube4
+    100154: stage1125:stage:pCylinder2
+    100156: stage1125:stage:pCylinder3
+    100158: stage1125:stage:pCylinder3 1
+    100160: stage1125:stage:pCylinder5
+    100162: stage1125:stage:pCylinder5 1
+    100164: stage1125:stage:pCylinder6
+    100166: stage1125:stage:pCylinder6 1
+    100168: stage1125:stage:pCylinder7
+    100170: stage1125:stage:pCylinder7 1
+    100172: stage1125:stage:pCylinder8
+    100174: stage1125:stage:pCylinder8 1
+    100176: stage1125:stage:pCylinder9
+    100178: stage1125:stage:pCylinder9 1
+    100180: stage1125:stage:polySurface10
+    100182: stage1125:stage:polySurface11
+    100184: stage1125:stage:polySurface13
+    100186: stage1125:stage:polySurface13 1
+    100188: stage1125:stage:polySurface17
+    100190: stage1125:stage:polySurface17 1
+    100192: stage1125:stage:polySurface18
+    100194: stage1125:stage:polySurface18 1
+    100196: stage1125:stage:pPlane2
+    100198: stage1125:stage:pPlane3
+    100200: stage1125:stage:pSphere1
+    100202: stage1125:stage:pSphere10
+    100204: stage1125:stage:pSphere11
+    100206: stage1125:stage:pSphere12
+    100208: stage1125:stage:pSphere13
+    100210: stage1125:stage:pSphere14
+    100212: stage1125:stage:pSphere15
+    100214: stage1125:stage:pSphere16
+    100216: stage1125:stage:pSphere2
+    100218: stage1125:stage:pSphere3
+    100220: stage1125:stage:pSphere4
+    100222: stage1125:stage:pSphere5
+    100224: stage1125:stage:pSphere6
+    100226: stage1125:stage:pSphere7
+    100228: stage1125:stage:pSphere8
+    100230: stage1125:stage:pSphere9
+    100232: stage1125:stage:stage1126:stage:pSphere1
+    100234: //RootNode
+    100236: tenjou
+    100238: tree
+    100240: tree1
+    100242: wall
+    100244: window
+    400000: baloon1
+    400002: baloon2
+    400004: baloon3
+    400006: baloon4
+    400008: books1
+    400010: books2
+    400012: bookshelf
+    400014: cage
+    400016: cagedesk
+    400018: camera1
+    400020: desk
+    400022: desk_baloom
+    400024: egg
+    400026: floor
+    400028: haikei
+    400030: hat
+    400032: hat1
+    400034: hat2
+    400036: light1
+    400038: light2
+    400040: nest
+    400042: nest1
+    400044: nest2
+    400046: nest3
+    400048: nest4
+    400050: nests
+    400052: pCube1
+    400054: pCube2
+    400056: pCube3
+    400058: pCube4
+    400060: pCube5
+    400062: pCube6
+    400064: pCube7
+    400066: pCylinder2
+    400068: pCylinder3
+    400070: pCylinder3 1
+    400072: pointlight1
+    400074: pointlight2
+    400076: polySurface10
+    400078: polySurface11
+    400080: pPlane2
+    400082: pPlane3
+    400084: pPlane4
+    400086: pPlane4 1
+    400088: pPlane5
+    400090: pPlane5 1
+    400092: pPlane6
+    400094: pPlane6 1
+    400096: pPlane7
+    400098: pPlane7 1
+    400100: pSphere1
+    400102: pSphere1 1
+    400104: reaf
+    400106: sofa
+    400108: sofa1
+    400110: stage
+    400112: stage1125:reaf
+    400114: stage1125:stage:book
+    400116: stage1125:stage:book 1
+    400118: stage1125:stage:book1
+    400120: stage1125:stage:book1 1
+    400122: stage1125:stage:book2
+    400124: stage1125:stage:book2 1
+    400126: stage1125:stage:book3
+    400128: stage1125:stage:book3 1
+    400130: stage1125:stage:book4
+    400132: stage1125:stage:book4 1
+    400134: stage1125:stage:book5
+    400136: stage1125:stage:book5 1
+    400138: stage1125:stage:book6
+    400140: stage1125:stage:book6 1
+    400142: stage1125:stage:group3
+    400144: stage1125:stage:group4
+    400146: stage1125:stage:pCube1
+    400148: stage1125:stage:pCube2
+    400150: stage1125:stage:pCube3
+    400152: stage1125:stage:pCube4
+    400154: stage1125:stage:pCylinder2
+    400156: stage1125:stage:pCylinder3
+    400158: stage1125:stage:pCylinder3 1
+    400160: stage1125:stage:pCylinder5
+    400162: stage1125:stage:pCylinder5 1
+    400164: stage1125:stage:pCylinder6
+    400166: stage1125:stage:pCylinder6 1
+    400168: stage1125:stage:pCylinder7
+    400170: stage1125:stage:pCylinder7 1
+    400172: stage1125:stage:pCylinder8
+    400174: stage1125:stage:pCylinder8 1
+    400176: stage1125:stage:pCylinder9
+    400178: stage1125:stage:pCylinder9 1
+    400180: stage1125:stage:polySurface10
+    400182: stage1125:stage:polySurface11
+    400184: stage1125:stage:polySurface13
+    400186: stage1125:stage:polySurface13 1
+    400188: stage1125:stage:polySurface17
+    400190: stage1125:stage:polySurface17 1
+    400192: stage1125:stage:polySurface18
+    400194: stage1125:stage:polySurface18 1
+    400196: stage1125:stage:pPlane2
+    400198: stage1125:stage:pPlane3
+    400200: stage1125:stage:pSphere1
+    400202: stage1125:stage:pSphere10
+    400204: stage1125:stage:pSphere11
+    400206: stage1125:stage:pSphere12
+    400208: stage1125:stage:pSphere13
+    400210: stage1125:stage:pSphere14
+    400212: stage1125:stage:pSphere15
+    400214: stage1125:stage:pSphere16
+    400216: stage1125:stage:pSphere2
+    400218: stage1125:stage:pSphere3
+    400220: stage1125:stage:pSphere4
+    400222: stage1125:stage:pSphere5
+    400224: stage1125:stage:pSphere6
+    400226: stage1125:stage:pSphere7
+    400228: stage1125:stage:pSphere8
+    400230: stage1125:stage:pSphere9
+    400232: stage1125:stage:stage1126:stage:pSphere1
+    400234: //RootNode
+    400236: tenjou
+    400238: tree
+    400240: tree1
+    400242: wall
+    400244: window
+    2300000: bookshelf
+    2300002: cage
+    2300004: cagedesk
+    2300006: desk
+    2300008: egg
+    2300010: floor
+    2300012: haikei
+    2300014: hat
+    2300016: hat1
+    2300018: hat2
+    2300020: nest
+    2300022: nest1
+    2300024: nest2
+    2300026: nest3
+    2300028: nest4
+    2300030: pCube1
+    2300032: pCube2
+    2300034: pCube3
+    2300036: pCube4
+    2300038: pCube5
+    2300040: pCube6
+    2300042: pCube7
+    2300044: pCylinder2
+    2300046: pCylinder3
+    2300048: pCylinder3 1
+    2300050: polySurface10
+    2300052: polySurface11
+    2300054: pPlane2
+    2300056: pPlane3
+    2300058: pPlane4
+    2300060: pPlane4 1
+    2300062: pPlane5
+    2300064: pPlane5 1
+    2300066: pPlane6
+    2300068: pPlane6 1
+    2300070: pPlane7
+    2300072: pPlane7 1
+    2300074: pSphere1
+    2300076: pSphere1 1
+    2300078: stage
+    2300080: stage1125:stage:book
+    2300082: stage1125:stage:book 1
+    2300084: stage1125:stage:book1
+    2300086: stage1125:stage:book1 1
+    2300088: stage1125:stage:book2
+    2300090: stage1125:stage:book2 1
+    2300092: stage1125:stage:book3
+    2300094: stage1125:stage:book3 1
+    2300096: stage1125:stage:book4
+    2300098: stage1125:stage:book4 1
+    2300100: stage1125:stage:book5
+    2300102: stage1125:stage:book5 1
+    2300104: stage1125:stage:book6
+    2300106: stage1125:stage:book6 1
+    2300108: stage1125:stage:pCube1
+    2300110: stage1125:stage:pCube2
+    2300112: stage1125:stage:pCube3
+    2300114: stage1125:stage:pCube4
+    2300116: stage1125:stage:pCylinder2
+    2300118: stage1125:stage:pCylinder3
+    2300120: stage1125:stage:pCylinder3 1
+    2300122: stage1125:stage:pCylinder5
+    2300124: stage1125:stage:pCylinder5 1
+    2300126: stage1125:stage:pCylinder6
+    2300128: stage1125:stage:pCylinder6 1
+    2300130: stage1125:stage:pCylinder7
+    2300132: stage1125:stage:pCylinder7 1
+    2300134: stage1125:stage:pCylinder8
+    2300136: stage1125:stage:pCylinder8 1
+    2300138: stage1125:stage:pCylinder9
+    2300140: stage1125:stage:pCylinder9 1
+    2300142: stage1125:stage:polySurface10
+    2300144: stage1125:stage:polySurface11
+    2300146: stage1125:stage:polySurface13
+    2300148: stage1125:stage:polySurface13 1
+    2300150: stage1125:stage:polySurface17
+    2300152: stage1125:stage:polySurface17 1
+    2300154: stage1125:stage:polySurface18
+    2300156: stage1125:stage:polySurface18 1
+    2300158: stage1125:stage:pPlane2
+    2300160: stage1125:stage:pPlane3
+    2300162: stage1125:stage:pSphere1
+    2300164: stage1125:stage:pSphere10
+    2300166: stage1125:stage:pSphere11
+    2300168: stage1125:stage:pSphere12
+    2300170: stage1125:stage:pSphere13
+    2300172: stage1125:stage:pSphere14
+    2300174: stage1125:stage:pSphere15
+    2300176: stage1125:stage:pSphere16
+    2300178: stage1125:stage:pSphere2
+    2300180: stage1125:stage:pSphere3
+    2300182: stage1125:stage:pSphere4
+    2300184: stage1125:stage:pSphere5
+    2300186: stage1125:stage:pSphere6
+    2300188: stage1125:stage:pSphere7
+    2300190: stage1125:stage:pSphere8
+    2300192: stage1125:stage:pSphere9
+    2300194: stage1125:stage:stage1126:stage:pSphere1
+    2300196: tenjou
+    2300198: wall
+    2300200: window
+    3300000: bookshelf
+    3300002: cage
+    3300004: cagedesk
+    3300006: desk
+    3300008: egg
+    3300010: floor
+    3300012: haikei
+    3300014: hat
+    3300016: hat1
+    3300018: hat2
+    3300020: nest
+    3300022: nest1
+    3300024: nest2
+    3300026: nest3
+    3300028: nest4
+    3300030: pCube1
+    3300032: pCube2
+    3300034: pCube3
+    3300036: pCube4
+    3300038: pCube5
+    3300040: pCube6
+    3300042: pCube7
+    3300044: pCylinder2
+    3300046: pCylinder3
+    3300048: pCylinder3 1
+    3300050: polySurface10
+    3300052: polySurface11
+    3300054: pPlane2
+    3300056: pPlane3
+    3300058: pPlane4
+    3300060: pPlane4 1
+    3300062: pPlane5
+    3300064: pPlane5 1
+    3300066: pPlane6
+    3300068: pPlane6 1
+    3300070: pPlane7
+    3300072: pPlane7 1
+    3300074: pSphere1
+    3300076: pSphere1 1
+    3300078: stage
+    3300080: stage1125:stage:book
+    3300082: stage1125:stage:book 1
+    3300084: stage1125:stage:book1
+    3300086: stage1125:stage:book1 1
+    3300088: stage1125:stage:book2
+    3300090: stage1125:stage:book2 1
+    3300092: stage1125:stage:book3
+    3300094: stage1125:stage:book3 1
+    3300096: stage1125:stage:book4
+    3300098: stage1125:stage:book4 1
+    3300100: stage1125:stage:book5
+    3300102: stage1125:stage:book5 1
+    3300104: stage1125:stage:book6
+    3300106: stage1125:stage:book6 1
+    3300108: stage1125:stage:pCube1
+    3300110: stage1125:stage:pCube2
+    3300112: stage1125:stage:pCube3
+    3300114: stage1125:stage:pCube4
+    3300116: stage1125:stage:pCylinder2
+    3300118: stage1125:stage:pCylinder3
+    3300120: stage1125:stage:pCylinder3 1
+    3300122: stage1125:stage:pCylinder5
+    3300124: stage1125:stage:pCylinder5 1
+    3300126: stage1125:stage:pCylinder6
+    3300128: stage1125:stage:pCylinder6 1
+    3300130: stage1125:stage:pCylinder7
+    3300132: stage1125:stage:pCylinder7 1
+    3300134: stage1125:stage:pCylinder8
+    3300136: stage1125:stage:pCylinder8 1
+    3300138: stage1125:stage:pCylinder9
+    3300140: stage1125:stage:pCylinder9 1
+    3300142: stage1125:stage:polySurface10
+    3300144: stage1125:stage:polySurface11
+    3300146: stage1125:stage:polySurface13
+    3300148: stage1125:stage:polySurface13 1
+    3300150: stage1125:stage:polySurface17
+    3300152: stage1125:stage:polySurface17 1
+    3300154: stage1125:stage:polySurface18
+    3300156: stage1125:stage:polySurface18 1
+    3300158: stage1125:stage:pPlane2
+    3300160: stage1125:stage:pPlane3
+    3300162: stage1125:stage:pSphere1
+    3300164: stage1125:stage:pSphere10
+    3300166: stage1125:stage:pSphere11
+    3300168: stage1125:stage:pSphere12
+    3300170: stage1125:stage:pSphere13
+    3300172: stage1125:stage:pSphere14
+    3300174: stage1125:stage:pSphere15
+    3300176: stage1125:stage:pSphere16
+    3300178: stage1125:stage:pSphere2
+    3300180: stage1125:stage:pSphere3
+    3300182: stage1125:stage:pSphere4
+    3300184: stage1125:stage:pSphere5
+    3300186: stage1125:stage:pSphere6
+    3300188: stage1125:stage:pSphere7
+    3300190: stage1125:stage:pSphere8
+    3300192: stage1125:stage:pSphere9
+    3300194: stage1125:stage:stage1126:stage:pSphere1
+    3300196: tenjou
+    3300198: wall
+    3300200: window
+    4300000: desk
+    4300002: haikei
+    4300004: window
+    4300006: wall
+    4300008: tenjou
+    4300010: floor
+    4300012: stage
+    4300014: cagedesk
+    4300016: cage
+    4300018: egg
+    4300020: bookshelf
+    4300022: stage1125:stage:book
+    4300024: stage1125:stage:book1
+    4300026: stage1125:stage:book2
+    4300028: stage1125:stage:book3
+    4300030: stage1125:stage:book4
+    4300032: stage1125:stage:book5
+    4300034: stage1125:stage:book6
+    4300036: stage1125:stage:book
+    4300038: stage1125:stage:book1
+    4300040: stage1125:stage:book2
+    4300042: stage1125:stage:book3
+    4300044: stage1125:stage:book4
+    4300046: stage1125:stage:book5
+    4300048: stage1125:stage:book6
+    4300050: stage1125:stage:polySurface10
+    4300052: stage1125:stage:polySurface11
+    4300054: stage1125:stage:pCylinder2
+    4300056: stage1125:stage:pPlane2
+    4300058: stage1125:stage:pPlane3
+    4300060: pPlane4
+    4300062: pPlane5
+    4300064: pPlane6
+    4300066: pPlane7
+    4300068: stage1125:stage:pCube1
+    4300070: stage1125:stage:pCube2
+    4300072: stage1125:stage:pCube3
+    4300074: stage1125:stage:pCube4
+    4300076: hat
+    4300078: hat1
+    4300080: hat2
+    4300082: stage1125:stage:pSphere1
+    4300084: stage1125:stage:pCylinder3
+    4300086: stage1125:stage:pSphere2
+    4300088: stage1125:stage:pSphere4
+    4300090: stage1125:stage:pSphere6
+    4300092: stage1125:stage:pSphere8
+    4300094: stage1125:stage:pSphere10
+    4300096: stage1125:stage:pSphere12
+    4300098: stage1125:stage:pSphere14
+    4300100: stage1125:stage:pSphere16
+    4300102: stage1125:stage:pSphere3
+    4300104: stage1125:stage:pSphere7
+    4300106: stage1125:stage:pSphere5
+    4300108: stage1125:stage:pSphere9
+    4300110: stage1125:stage:pSphere11
+    4300112: stage1125:stage:pSphere13
+    4300114: stage1125:stage:pSphere15
+    4300116: stage1125:stage:polySurface17
+    4300118: stage1125:stage:polySurface13
+    4300120: stage1125:stage:polySurface18
+    4300122: stage1125:stage:pCylinder5
+    4300124: stage1125:stage:pCylinder6
+    4300126: stage1125:stage:pCylinder7
+    4300128: stage1125:stage:pCylinder8
+    4300130: stage1125:stage:pCylinder9
+    4300132: stage1125:stage:polySurface17
+    4300134: stage1125:stage:polySurface13
+    4300136: stage1125:stage:polySurface18
+    4300138: stage1125:stage:pCylinder5
+    4300140: stage1125:stage:pCylinder6
+    4300142: stage1125:stage:pCylinder7
+    4300144: stage1125:stage:pCylinder8
+    4300146: stage1125:stage:pCylinder9
+    4300148: stage1125:stage:pCylinder3
+    4300150: stage1125:stage:stage1126:stage:pSphere1
+    4300152: pSphere1
+    4300154: pCylinder3
+    4300156: pSphere1
+    4300158: pCylinder3
+    4300160: pCube1
+    4300162: pCube2
+    4300164: pCube3
+    4300166: pCube4
+    4300168: polySurface10
+    4300170: polySurface11
+    4300172: pCylinder2
+    4300174: pPlane2
+    4300176: pPlane3
+    4300178: pPlane4
+    4300180: pPlane5
+    4300182: pPlane6
+    4300184: pPlane7
+    4300186: pCube5
+    4300188: pCube6
+    4300190: pCube7
+    4300192: nest3
+    4300194: nest2
+    4300196: nest1
+    4300198: nest4
+    4300200: nest
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

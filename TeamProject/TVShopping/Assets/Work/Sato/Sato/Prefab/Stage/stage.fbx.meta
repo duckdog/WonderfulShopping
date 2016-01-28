@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: ddb5ee0d64a2e42a4a145289a16468f8
+timeCreated: 1446545435
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: book
+    100002: book 1
+    100004: book1
+    100006: book1 1
+    100008: book2
+    100010: book2 1
+    100012: book3
+    100014: book3 1
+    100016: book4
+    100018: book4 1
+    100020: book5
+    100022: book5 1
+    100024: book6
+    100026: book6 1
+    100028: books1
+    100030: books2
+    100032: bookshelf
+    100034: bottom
+    100036: cage
+    100038: cagedesk
+    100040: desk
+    100042: egg
+    100044: floor
+    100046: haikei
+    100048: nest
+    100050: pCylinder2
+    100052: pointLight1
+    100054: pointLight2
+    100056: polySurface10
+    100058: polySurface11
+    100060: pPlane2
+    100062: pPlane3
+    100064: pPlane4
+    100066: pPlane5
+    100068: pPlane6
+    100070: pPlane7
+    100072: //RootNode
+    100074: stage
+    100076: tenjou
+    100078: tree
+    100080: wall
+    100082: window
+    400000: book
+    400002: book 1
+    400004: book1
+    400006: book1 1
+    400008: book2
+    400010: book2 1
+    400012: book3
+    400014: book3 1
+    400016: book4
+    400018: book4 1
+    400020: book5
+    400022: book5 1
+    400024: book6
+    400026: book6 1
+    400028: books1
+    400030: books2
+    400032: bookshelf
+    400034: bottom
+    400036: cage
+    400038: cagedesk
+    400040: desk
+    400042: egg
+    400044: floor
+    400046: haikei
+    400048: nest
+    400050: pCylinder2
+    400052: pointLight1
+    400054: pointLight2
+    400056: polySurface10
+    400058: polySurface11
+    400060: pPlane2
+    400062: pPlane3
+    400064: pPlane4
+    400066: pPlane5
+    400068: pPlane6
+    400070: pPlane7
+    400072: //RootNode
+    400074: stage
+    400076: tenjou
+    400078: tree
+    400080: wall
+    400082: window
+    2300000: book
+    2300002: book 1
+    2300004: book1
+    2300006: book1 1
+    2300008: book2
+    2300010: book2 1
+    2300012: book3
+    2300014: book3 1
+    2300016: book4
+    2300018: book4 1
+    2300020: book5
+    2300022: book5 1
+    2300024: book6
+    2300026: book6 1
+    2300028: bookshelf
+    2300030: cage
+    2300032: cagedesk
+    2300034: desk
+    2300036: egg
+    2300038: floor
+    2300040: haikei
+    2300042: nest
+    2300044: pCylinder2
+    2300046: polySurface10
+    2300048: polySurface11
+    2300050: pPlane2
+    2300052: pPlane3
+    2300054: pPlane4
+    2300056: pPlane5
+    2300058: pPlane6
+    2300060: pPlane7
+    2300062: stage
+    2300064: tenjou
+    2300066: wall
+    2300068: window
+    3300000: book
+    3300002: book 1
+    3300004: book1
+    3300006: book1 1
+    3300008: book2
+    3300010: book2 1
+    3300012: book3
+    3300014: book3 1
+    3300016: book4
+    3300018: book4 1
+    3300020: book5
+    3300022: book5 1
+    3300024: book6
+    3300026: book6 1
+    3300028: bookshelf
+    3300030: cage
+    3300032: cagedesk
+    3300034: desk
+    3300036: egg
+    3300038: floor
+    3300040: haikei
+    3300042: nest
+    3300044: pCylinder2
+    3300046: polySurface10
+    3300048: polySurface11
+    3300050: pPlane2
+    3300052: pPlane3
+    3300054: pPlane4
+    3300056: pPlane5
+    3300058: pPlane6
+    3300060: pPlane7
+    3300062: stage
+    3300064: tenjou
+    3300066: wall
+    3300068: window
+    4300000: desk
+    4300002: haikei
+    4300004: window
+    4300006: wall
+    4300008: tenjou
+    4300010: floor
+    4300012: stage
+    4300014: cagedesk
+    4300016: cage
+    4300018: nest
+    4300020: egg
+    4300022: bookshelf
+    4300024: book
+    4300026: book1
+    4300028: book2
+    4300030: book3
+    4300032: book4
+    4300034: book5
+    4300036: book6
+    4300038: book
+    4300040: book1
+    4300042: book2
+    4300044: book3
+    4300046: book4
+    4300048: book5
+    4300050: book6
+    4300052: polySurface10
+    4300054: polySurface11
+    4300056: pCylinder2
+    4300058: pPlane2
+    4300060: pPlane3
+    4300062: pPlane4
+    4300064: pPlane5
+    4300066: pPlane6
+    4300068: pPlane7
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

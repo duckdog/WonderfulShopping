@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<RootNamespace></RootNamespace>
+	<ProjectGuid>{40423207-0412-6D85-357B-46C57990D8E8}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_2_1;UNITY_5_2;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_REFLECTION_BUFFERS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Work\Koiwa\MiniGame\Game_Belt.cs" />
+     <Compile Include="Assets\Work\Koiwa\MiniGame\Game_Pillow.cs" />
+     <Compile Include="Assets\Work\Koiwa\MiniGame\Game_Pillow\Pillow_Manager.cs" />
+     <Compile Include="Assets\Work\Koiwa\OperationSystem.cs" />
+     <Compile Include="Assets\Work\Koiwa\Resources\LightDrop\LightCreate.cs" />
+     <Compile Include="Assets\Work\Koiwa\Resources\LightDrop\LightRotate.cs" />
+     <Compile Include="Assets\Work\Koiwa\Resources\MiniGameObj\Pillow_Move.cs" />
+     <Compile Include="Assets\Work\Koiwa\Resources\UI\BruchButtonTextSetter.cs" />
+     <Compile Include="Assets\Work\Koiwa\Resources\UI\BrunchTextMasterTable.cs" />
+     <Compile Include="Assets\Work\Koiwa\Resources\UI\Button_Reaction.cs" />
+     <Compile Include="Assets\Work\Koiwa\Resources\UI\Create_Button.cs" />
+     <Compile Include="Assets\Work\Koiwa\Scripts\ButtonManager.cs" />
+     <Compile Include="Assets\Work\Koiwa\Scripts\Destroy_Object.cs" />
+     <Compile Include="Assets\Work\Koiwa\Scripts\QTE_Hold.cs" />
+     <Compile Include="Assets\Work\Koiwa\Scripts\QTE_Swipe.cs" />
+     <Compile Include="Assets\Work\Koiwa\Scripts\QTE_Tap.cs" />
+     <Compile Include="Assets\Work\Koiwa\Scripts\RayTouch.cs" />
+     <Compile Include="Assets\Work\Koiwa\Scripts\RayTouch2D.cs" />
+     <Compile Include="Assets\Work\Koiwa\Scripts\SwipeSystem.cs" />
+     <Compile Include="Assets\Work\Koiwa\Scripts\SwipeSystem2D.cs" />
+     <Compile Include="Assets\Work\Koiwa\Scripts\TouchSystem.cs" />
+     <Compile Include="Assets\Work\Nishimaki\Script\Aspect.cs" />
+     <Compile Include="Assets\Work\Nishimaki\Script\Menu\MainMenuUI.cs" />
+     <Compile Include="Assets\Work\Nishimaki\Script\ResultSumple.cs" />
+     <Compile Include="Assets\Work\Nishimaki\Script\ScenarioManager.cs" />
+     <Compile Include="Assets\Work\Ogawa\CS\MenuButton.cs" />
+     <Compile Include="Assets\Work\Ono\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Work\Ono\SampleAnimation.cs" />
+     <Compile Include="Assets\Work\Ono\hakusixyutoumeivew.cs" />
+     <Compile Include="Assets\Work\Ono\satu_script.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Plugins\JsonNode.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Plugins\MiniJSON.cs.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Animation\CameraAnimator.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Animation\ChangeCamera.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Animation\ChangeFatBob.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Animation\CharacterAnimator.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Animation\CruckAnimator.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Animation\ExtraAnimator.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Animation\FadeInOut.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Animation\FlyingFace.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Animation\ScreenAnimator.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Animation\WaitFade.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\CSVRoad\CSVMasterTable.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\CSVRoad\MasterTableBase.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\CharacterLookAt.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Easing\EasinSample.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Easing\Easing.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Manager\CVManager.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Manager\GameMainManager.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Manager\MinigameManager.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\SEManager.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\SaveJson.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\ScenarioSetter.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\ScenarioText.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Score\ScoreManager.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\Score\ScoreText.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\StartCount.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\TestQTE\Buttons.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\TestQTE\QTE.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\TestQTE\QTEGenerator.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\TestQTE\QTESwipe.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\TestQTE\QTETap.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\TestQTE\QTETouch.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\TestQTE\QTEUI.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\TestQTE\SwipeSystem.cs" />
+     <Compile Include="Assets\Work\Sato\Sato\Script\TestQTE\SwipeSystem2D.cs" />
+     <None Include="Assets\Work\Nishimaki\Others\Scenario\ジム移動ルート 成功.txt" />
+     <None Include="Assets\Work\Ogawa\Others\Scenario\ジム移動ルート 失敗.txt" />
+     <None Include="Assets\Work\Nishimaki\Others\Scenario\ジム移動ルート 失敗.txt" />
+     <None Include="Assets\Work\Ogawa\Others\Scenario\ジム移動ルート 成功.txt" />
+     <None Include="Assets\Work\Nishimaki\Others\Scenario\ジム移動ルート.txt" />
+     <None Include="Assets\Work\Koiwa\枕投げの設定.txt" />
+     <None Include="Assets\Work\Sato\Sato\ギャグ3分20秒.txt" />
+     <None Include="Assets\Work\Ogawa\Others\Scenario\ジム移動ルート.txt" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
