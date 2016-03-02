@@ -122,6 +122,11 @@ public class CVManager : MonoBehaviour {
 		_isPlay = true;
 	}
 
+    public void Stop()
+    {
+        _audio.Stop();
+        _isPlay = false;
+    }
 	// Update is called once per frame
 	void Update () {
 

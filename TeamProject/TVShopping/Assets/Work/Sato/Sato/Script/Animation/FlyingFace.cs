@@ -68,6 +68,7 @@ public class FlyingFace : MonoBehaviour {
 
 		_timer = 0.0f;
 		_move_range = new Vector3 (30,5,30);
+        _defalt_face_pos = transform.localPosition;
 		_abery_defalt_face_pos = _abery.transform.localPosition;
 	}
 
@@ -109,8 +110,11 @@ public class FlyingFace : MonoBehaviour {
 		CharacterAnimator abey_animation = (GameObject.FindGameObjectWithTag ("Abery")).GetComponent<CharacterAnimator> ();
 		abey_animation._current_state = CharacterAnimator.State.Angry;
 
-		//忍び寄るアベリィ....
-		while(time < total_time)
+        //ちょっとためる
+        yield return new WaitForSeconds(1.0f);
+
+        //忍び寄るアベリィ....
+        while (time < total_time)
 		{
 			time += Time.deltaTime;
 			add_x = _Easing.OutExp(time,total_time,move_max,move_min);
@@ -245,56 +249,62 @@ public class FlyingFace : MonoBehaviour {
 			//フェード開始
 			if (time >= _fade_start_time) {
 				//1秒かけて、フェード
-				StartCoroutine (FadeToFade(_fade_total_time));
+				StartCoroutine (WaitScreenCreate(_fade_total_time));
 				jony_animation._current_state = CharacterAnimator.State.Happened;
 				_do_fall = false;
 
-				yield break;
+                //ループを抜ける
+				break;
 			}
 
-			//シナリオ読み込みを再開
-			_scenario.BackToOldScenerioRoute ();
-			yield return null;
-		}
+            yield return null;
 
-	}
+        }
 
-	private IEnumerator FadeToFade(float total_time)
+        //シナリオ読み込みを再開
+        _scenario.BackToOldScenerioRoute();
+        yield return null;
+
+    }
+
+	private IEnumerator WaitScreenCreate(float total_time)
 	{
-		//fade_time分の時間をかけて、フェードOUT
-		float time = 0;
-		StartCoroutine (_WaitFade.FadeInOutScreenImage (total_time));
-		CharacterAnimator abey_animation = (GameObject.FindGameObjectWithTag ("Abery")).GetComponent<CharacterAnimator> ();
-		//フェードアウト終了後、遅延時間分だけ、フェードインをおくらせる。
-		while (time < total_time + _wait_fade_time) {
-
-			time += Time.deltaTime;
-			yield return null;
 		
-		}
-
-		//フェードイン　いろいろと初期位置にもどす.
-		time = 0;
-		_abery.transform.localPosition = _abery_defalt_face_pos;
-		abey_animation._current_state = CharacterAnimator.State.Smile;
-		_sprite_renderer.enabled = false;
-		_CruckAnimator._doCrack = false;
-		StartCoroutine (_WaitFade.FadeInOutScreenImage (total_time));
-
-		//フェードイン終了後,
-		while (time < total_time) {
-
-			time += Time.deltaTime;
-			yield return null;
-		}
-
-		//シナリオ読み込みを再開
-		Init ();
+        //fade_time分の時間をかけて少々お待ちください画像を徐々に表示.
+        StartCoroutine(_WaitFade.FadeInOutScreenImage (total_time));
+        yield return null;
 
 	}
 
+    public IEnumerator WaitScreenDelete(float total_time = 1)
+    {
+        //fade_time分の時間をかけて、フェードOUT
+        StartCoroutine(_WaitFade.FadeInOutScreenImage(total_time));
+        CharacterAnimator abey_animation = (GameObject.FindGameObjectWithTag("Abery")).GetComponent<CharacterAnimator>();
+  
+        //フェードイン　いろいろと初期位置にもどす.  
+        _abery.transform.localPosition = _abery_defalt_face_pos;
+        abey_animation._current_state = CharacterAnimator.State.Smile;
+        _sprite_renderer.enabled = false;
+        _CruckAnimator._doCrack = false;
+        StartCoroutine(_WaitFade.FadeInOutScreenImage(total_time));
+        //シナリオ読み込みを再開
+        Init();
+        yield return null;
 
-	void Init(){
+        /*  //フェードイン終了後,
+          while (time < total_time)
+          {
+
+              time += Time.deltaTime;
+              yield return null;
+          }
+          */
+
+    }
+
+
+    void Init(){
 
 		_timer = 0.0f;
 		_do_fall = false;
@@ -303,7 +313,7 @@ public class FlyingFace : MonoBehaviour {
 		_WaitFade._DoFade = false;
 		transform.localPosition = _defalt_face_pos;
 		//シナリオ読み込みを再開
-		_scenario.BackToOldScenerioRoute ();
+		//_scenario.BackToOldScenerioRoute ();
 
 
 

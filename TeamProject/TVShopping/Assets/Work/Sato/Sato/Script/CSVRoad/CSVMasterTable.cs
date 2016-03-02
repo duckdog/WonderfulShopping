@@ -27,11 +27,7 @@ public class CSVScenarioData : MasterBase
 	public CameraAnimator.Animation CameraAnimation{ get; private set;}
 	public ExtraAnimator.Animation ExtraAnimation { get; private set;}
 	public SEManager.SE SEPetern { get; private set;}
-	/*public int  JonyAnimation { get; private set; }
-	public int AberyAnimation { get; private set; }
-	public int JonyState { get; private set; }
-	public int AberyState { get; private set; }
-*/
+
 
 }
 

@@ -102,14 +102,17 @@ public class ScenarioSetter : MonoBehaviour {
 			//分岐のルートがセットされた時のみ有効
 			if (value != Route.Main || value != Route.NULL) {
 				OthersScenarioSkip (value);//選んだルート以外のテキスト番号を次の分岐のところまでスキップ
-			}
+            }
 			_brunch_old_route = value;
 			_next_route = value;
-		}
+            UpdateScenerio(_next_route);
+        }
 	}
 	float _timer;
 
 
+    //テキスト一時保存領域.
+    bool _do_skip_text;
 	string _current_text;
 	int[,] _current_text_number = new int[4,1];
 	public int CurrentTextNumber_Main{
@@ -151,7 +154,7 @@ public class ScenarioSetter : MonoBehaviour {
 		_start_count = GameObject.FindObjectOfType<StartCount> ();
 		Style = new GUIStyle();
 		State = new GUIStyleState();
-
+        
 
 		//CSVデータから、ルートごとに分けてテキストデータ等を読み込む
 		var MasterTable = new CSVMasterTable();
@@ -200,6 +203,7 @@ public class ScenarioSetter : MonoBehaviour {
 
 		_cv_reference.Init();
 		_next_route = Route.NULL;
+        _do_skip_text = false;
 		//UpdateScenerio (Route.Main);
 
 		
@@ -209,114 +213,29 @@ public class ScenarioSetter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//debug
-		if (Input.GetKey (KeyCode.Space)) {
-			Application.LoadLevel ("USA");
-		}
+        //スキップ機能
+        //テキスト表示中にタップで、テキストを全表示、音声をストップ.
+        if (_cv_reference._isPlay && !_do_skip_text  &&
+            _next_route != Route.NULL && Input.GetMouseButtonDown(0))
+        {
+            _do_skip_text = true;
+            _cv_reference.Stop();
+        }
+        else if (!_cv_reference._isPlay && _next_route != Route.NULL &&
+                Input.GetMouseButtonDown(0))
+        {
+            //テキストが全部表示されていて且つＣＶがなってない時、
+            //タップで次のシナリオへ.
+            UpdateScenerio(_next_route);
+        }
 
-
-		if(!_cv_reference._isPlay && _next_route != Route.NULL){
-
-			//テキストデータを更新	
-			UpdateScenerio (_next_route);
-	
-
-		}
-
-
-		//ミニゲーム等で、テキスト表示を一旦中止.
-		//デバッグキーがなくなったら、スイッチ分の中に入れるべき
-		if (_next_route == Route.NULL) {
-			
-
-			_current_text = "";
-			//Fix: α版用デバッグキー　右クリックで、メインシナリオに遷移
-			if (Input.GetMouseButtonDown (1)) {
-				_next_route = Route.Main;
-				//UpdateScenerio (_next_route);
-			}
-			
-			if (Input.GetKeyDown(KeyCode.A)) {
-				_next_route = Route.A;
-				//UpdateScenerio (_next_route);
-			
-				//シナリオをスキップ//次の分岐のテキストまで配列番号を更新
-				while (true) {
-					if (_B [CurrentTextNumber_B]._next_route != Route.B) {
-
-						CurrentTextNumber_B++;
-						break;
-					}
-					CurrentTextNumber_B++;
-				};
-				while (true) {
-
-					if (_C [CurrentTextNumber_C]._next_route != Route.C) {
-
-						CurrentTextNumber_C++;
-						break;
-					}
-					CurrentTextNumber_C++;
-				};
-
-				
-			}
-
-			if (Input.GetKeyDown(KeyCode.B)) {
-				_next_route = Route.B;
-				//UpdateScenerio (_next_route);
-				//シナリオをスキップ//次の分岐のテキストまで配列番号を更新
-				while (true) {
-					if (_A [CurrentTextNumber_A]._next_route != Route.A) {
-
-						CurrentTextNumber_A++;
-						break;
-					}
-					CurrentTextNumber_A++;
-				};
-				while (true) {
-					if (_C [CurrentTextNumber_C]._next_route != Route.C) {
-
-						CurrentTextNumber_C++;
-						break;
-					}
-					CurrentTextNumber_C++;
-				};
-			}
-
-			if (Input.GetKeyDown(KeyCode.C)) {
-				_next_route = Route.C;
-				//UpdateScenerio (_next_route);
-
-				//シナリオをスキップ//次の分岐のテキストまで配列番号を更新
-				while (true) {
-					if (_A [CurrentTextNumber_A]._next_route != Route.A) {
-
-						CurrentTextNumber_A++;
-						break;
-					}
-					CurrentTextNumber_A++;
-				};
-				while (true) {
-					if (_B [CurrentTextNumber_B]._next_route != Route.B) {
-
-						CurrentTextNumber_B++;
-						break;
-					}
-					CurrentTextNumber_B++;
-				};
-			}
-		}
-		
-		
-		
-	}
+    }
 	
 	//シナリオ、アニメーション、カメラ位置情報を更新
 	void UpdateScenerio(Route route)
 	{
 		Scenariodate data = new Scenariodate();
-		_old_route = route;
+		
 		int text_number = 0;
 		switch (route) {
 
@@ -324,6 +243,7 @@ public class ScenarioSetter : MonoBehaviour {
 			text_number = _current_text_number [(int)Route.Main, 0];
 			data        = _Main [text_number];
 			_current_text_number [(int)Route.Main, 0]++;
+            
 			break;
 		case Route.A:
 			text_number = _current_text_number [(int)Route.A, 0];
@@ -346,9 +266,10 @@ public class ScenarioSetter : MonoBehaviour {
 		}
 		//ルートが決まってない場合以外更新
 		if (route != Route.NULL) {
-			_current_text = data._text_date;
-			_scenario_text._Text.text = data._text_date;
-			_timer = data._time;
+           
+            _current_text = data._text_date;
+            StartCoroutine(WordByWordShowing(_current_text,0.055f));
+            _timer = data._time;
 			if (data._next_route == Route.BacktoOldRoute) {
 				//直前の分岐後ルートに戻る.ボブ出現の後,
 				_next_route = _brunch_old_route;
@@ -367,8 +288,8 @@ public class ScenarioSetter : MonoBehaviour {
 			_cv_reference.CVSoundPlay (text_number, route);
 			_se_reference.CenterPlay (data._se_pertern);
 			_extra_animator.PlayingExtraAnimation (data._extra_animation);
-
-		}
+            _old_route = route;
+        }
 	}
 
 	//一個前のルートを取得します。
@@ -376,8 +297,8 @@ public class ScenarioSetter : MonoBehaviour {
 	public void BackToOldScenerioRoute()
 	{
 		_next_route = _old_route;
-
-	}
+        UpdateScenerio(_next_route);
+    }
 	//進まなかったルートのテキストを、次の分岐のテキストまでに更新します
 	//ルート分岐が起こる際に使用します.※なお、プロパティのSetRouteで値を入れる際に使われてます。
 	void OthersScenarioSkip(Route chosed_rote,int route_patern = 2)
@@ -452,7 +373,45 @@ public class ScenarioSetter : MonoBehaviour {
 
 
 	}
-		
+
+    IEnumerator WordByWordShowing(string words,float delay_time)
+    {
+        int date_size = words.Length;
+        int count = 0;
+        float time = 0;
+        _scenario_text._Text.text = "";
+        _do_skip_text = false;
+        while (count < date_size)
+        {
+            //スキップ
+           if (_do_skip_text)
+            {
+                _do_skip_text = false;
+                _scenario_text._Text.text = words;
+                break;
+            }
+            
+            if (time <= 0)
+            {
+                //一文字ずつ返す.
+                _scenario_text._Text.text += words.Substring(count, 1);
+                //区切り文字があった場合は表示を遅らせる
+                if (words.Substring(count, 1) == "、" ||
+                    words.Substring(count, 1) == ",")
+                {time = delay_time + 0.3f;}
+                else { time = delay_time; }
+                    count++;
+                yield return null;
+                
+            }
+
+            time -= Time.deltaTime;
+            yield return null;
+        }
+
+        yield return null;
+
+    }	
 
 	IEnumerator WaitTimeAndGo()
 	{

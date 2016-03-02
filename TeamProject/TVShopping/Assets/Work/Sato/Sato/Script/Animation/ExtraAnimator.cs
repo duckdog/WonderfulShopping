@@ -11,6 +11,7 @@ public class ExtraAnimator : MonoBehaviour {
 		BobChangeFat = 4,
 		DropLight = 5,
 		GotoResult = 6,
+        JustWaitScreenDelete = 7,
 		NULL = -1,
 	}
 	Animation _animation;
@@ -77,7 +78,13 @@ public class ExtraAnimator : MonoBehaviour {
 		case Animation.GotoResult:
 			StartCoroutine (GotoResult());
 			break;
-		}
+       case Animation.JustWaitScreenDelete:
+                var flyfaceAnimation = FindObjectOfType<FlyingFace>();
+                StartCoroutine(flyfaceAnimation.WaitScreenDelete());
+            break;
+
+
+        }
 
 	}
 
